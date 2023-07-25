@@ -46,14 +46,14 @@ function msg(){
   var num = document.getElementById("num").value;
   var nums = document.getElementById("nums").value;
 
-  if (nome.trim() !== "") {
-    var mensagem = "Nome: " + nome + "%0a";
-    if (num.trim() !== "") {
-      mensagem += "Número: " + num + "%0a";
-    }
-    if (nums.trim() !== "") {
-      mensagem += "Mais: " + nums;
-    }
+  if (typeof nome === 'string' && nome.trim() !== "") {
+  var mensagem = "Nome: " + nome + "%0a";
+  if (typeof num === 'string' && num.trim() !== "") {
+    mensagem += "Número: " + num + "%0a";
+  }
+  if (typeof nums === 'string' && nums.trim() !== "") {
+    mensagem += "Mais: " + nums;
+  }
 
 /* var url = "https://wa.me/5512996492735?text=" + "Nome: " + Nome + "%0a"
 + "Numero: " + num + "%0a" + "Mais: " + nums; */
