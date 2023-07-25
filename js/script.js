@@ -45,7 +45,7 @@ function msg(){
   var num = document.getElementById("num").value;
   var nums = document.getElementById("nums").value;
 
-  if (nome.trim() !== "") {
+  if (nome && nome.trim() !== "") {
     var mensagem = "Nome: " + nome + "%0a";
     if (num.trim() !== "") {
       mensagem += "Número: " + num + "%0a";
@@ -57,7 +57,7 @@ function msg(){
 /* var url = "https://wa.me/5512996492735?text=" + "Nome: " + Nome + "%0a"
 + "Numero: " + num + "%0a" + "Mais: " + nums; */
 
-    var url = "https://wa.me/5512996492735?text=" + (mensagem);
+    var url = "https://wa.me/5512996492735?text=" + encodeURIComponent(mensagem);
     window.open(url, '_blank').focus();
   } else {
     alert("Por favor, preencha o campo 'Nome' antes de enviar para o WhatsApp.");
