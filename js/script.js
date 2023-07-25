@@ -46,7 +46,7 @@ function msg(){
   var num = document.getElementById("num").value;
   var nums = document.getElementById("nums").value;
 
-  if (nome && nome.trim() !== "") {
+  if (nome.trim() !== "") {
     var mensagem = "Nome: " + nome + "%0a";
     if (num.trim() !== "") {
       mensagem += "Número: " + num + "%0a";
