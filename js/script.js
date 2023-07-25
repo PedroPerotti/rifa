@@ -47,9 +47,9 @@ function msg(){
   var nums = document.getElementById("nums").value;
 
   if (typeof nome === 'string' && nome.trim() !== "") {
-  var mensagem = "Nome: " + nome + "";
+  var mensagem = "Nome: " + nome + " ";
   if (typeof num === 'string' && num.trim() !== "") {
-    mensagem += "Número: " + num + "";
+    mensagem += "Número: " + num + " ";
   }
   if (typeof nums === 'string' && nums.trim() !== "") {
     mensagem += "Mais: " + nums;
