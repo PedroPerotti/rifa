@@ -48,10 +48,10 @@ function msg(){
 
   if (typeof nome === 'string' && nome.trim() !== "") {
   var mensagem = "Nome: " + nome + "%0a";
-  if (typeof num === 'string' && num.trim() !== "") {
+  if (typeof num === 'numer' && num.trim() !== "") {
     mensagem += "Número: " + num + "%0a";
   }
-  if (typeof nums === 'string' && nums.trim() !== "") {
+  if (typeof nums === 'number' && nums.trim() !== "") {
     mensagem += "Mais: " + nums;
   }
 
