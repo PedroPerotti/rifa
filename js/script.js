@@ -57,8 +57,7 @@ function msg(){
 /* var url = "https://wa.me/5512996492735?text=" + "Nome: " + Nome + "%0a"
 + "Numero: " + num + "%0a" + "Mais: " + nums; */
 
-    var url = "https://wa.me/5512996492735?text=" + "Nome: " + Nome + "%0a"
-    + "Numero: " + num + "%0a" + "Mais: " + nums + encodeURIComponent(mensagem);
+    var url = "https://wa.me/5512996492735?text=" + (mensagem);
     window.open(url, '_blank').focus();
   } else {
     alert("Por favor, preencha o campo 'Nome' antes de enviar para o WhatsApp.");
