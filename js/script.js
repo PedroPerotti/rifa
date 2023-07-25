@@ -42,7 +42,7 @@ function openModal(id){
 
 function msg(){
 
-  var Nome = document.getElementById("nome").value;
+  var nome = document.getElementById("nome").value;
   var num = document.getElementById("num").value;
   var nums = document.getElementById("nums").value;
 
@@ -55,17 +55,11 @@ function msg(){
     mensagem += "Mais: " + nums;
   }
 
-/* var url = "https://wa.me/5512996492735?text=" + "Nome: " + Nome + "%0a"
-+ "Numero: " + num + "%0a" + "Mais: " + nums; */
-
   var recipientNumber = "5512996492735"; // Replace with the recipient's WhatsApp number
   var url = "https://wa.me/" + recipientNumber + "?text=" + encodeURIComponent(mensagem);
     window.open(url, '_blank').focus();
   } else {
     alert("Por favor, preencha o campo 'Nome' antes de enviar para o WhatsApp.");
-}
-
-
-/* window.open(url, '_blank').focus(); */
+  }
 
 }
