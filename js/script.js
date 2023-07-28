@@ -5,7 +5,7 @@ const nums = document.querySelector('#nums')
 const numeros = document.querySelector('.numeros');
 
 //array
-vendido = [4,29,30,31,2,8,15,18,60,14,66,32,133,9,10,27,43,123,7,109,16,19,13,23,6,33,21,34]
+vendido = [4,29,30,31,2,8,15,18,60,14,66,32,133,9,10,27,43,123,7,109,16,13,23,6,33,21,34]
 
 
 for (var i = 1; i < 151; i++) {
